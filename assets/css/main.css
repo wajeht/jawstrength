@@ -3444,7 +3444,7 @@ ul.feature-icons li:nth-child(2) {
 }
 
 #wrapper > section.intro > .content {
-    height: 100vh;
+    height: 60vh;
     max-width: none;
 }
 
