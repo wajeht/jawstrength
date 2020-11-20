@@ -2,6 +2,6 @@
 
 Project files for my coaching service website. Nothing more!
 
-My new coaching service website and its project has been moved to 
+My new coaching service website and its project has been moved to
 
-`https://github.com/wajeht/jaw.cool`
+`https://github.com/wajeht/jaw.coach`
