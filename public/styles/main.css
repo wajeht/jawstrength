@@ -1,0 +1,34 @@
+body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.content {
+    flex: 2;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container h3 {
+    font-size: large;
+}
