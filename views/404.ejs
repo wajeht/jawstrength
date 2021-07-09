@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('./layouts/header.ejs'); -%>
+    <section class="not-found">
+        <div class="container">
+            <div class="splitter">
+                <div class="not-found__image">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="not-found__info">
+                    <h2>Not found</h2>
+                    <div class="underline"></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolorem
+                        rerum
+                        voluptatem velit a, labore repellat temporibus quos quia aliquam obcaecati
+                        reprehenderit nostrum aperiam blanditiis eligendi quisquam, atque excepturi
+                        odit.</p>
+                </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <%= pageTitle %>
-    </title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-
-<body>
-    <div class="container">
-        <!-- <div class="logo">
-            <img src="images/logo.png">
-        </div> -->
-        <div class="content">
-            <h3>404</h3>
-            <p>NOT HERE!</p>
+            </div>
         </div>
-    </div>
-</body>
-
-</html>
+    </section>
+    <%- include('./layouts/footer.ejs'); -%>

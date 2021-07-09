@@ -1,255 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('./layouts/header.ejs'); -%>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JawStrength, LLC</title>
-	<link rel="stylesheet" href="styles/main.css">
-
-</head>
-
-<body>
-
-
-	<!-- ---------- Header ---------- -->
-	<header>
-		<div class="header__container">
-			<div class="header__logo">
-				<h1>
-					<a href="#">
-						<spam id="jaw">JAW</spam>
-						<spam id="strength">STRENGTH</spam </a>
-				</h1>
-			</div>
-			<nav class="header__nav">
-				<ul class="header__nav-ul">
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a class="training-log" id="training-log" href="#">Training-log</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main>
-
-		<!-- ---------- Intro ---------- -->
-		<section class="intro">
-			<div class="container">
-				<div class="splitter">
-					<div class="intro__info">
-						<h2>Let's get stronger</h2>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-						<br>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-						<button>Learn more</button>
-
-					</div>
-					<!-- <div class="intro__image">
-						<img src="photo.png" alt="">
-					</div> -->
-				</div>
-			</div>
-		</section>
-
-		<!-- ---------- About ---------- -->
-		<section class="about">
-			<div class="container">
-				<div class="splitter">
-					<div class="about__image">
-						<img src="images/photo.png" alt="">
-					</div>
-					<div class="about__info">
-						<h2>About us</h2>
-						<div class="underline"></div>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-						<br>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ---------- Process ---------- -->
-		<section class="process">
-			<div class="container">
-				<div class="process-title">
-					<h2>Our process</h2>
-					<div class="underline"></div>
-				</div>
-				<div class="splitter">
-					<div class="process__card">
-						<i class="fas fa-handshake"></i>
-						<h3>Intial consultation</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-					<div class="process__card">
-						<i class="fas fa-pencil-ruler"></i>
-						<h3>Plan a training block</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-					<div class="process__card">
-						<i class="fas fa-file-excel"></i>
-						<h3>Receive a training block</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-					<div class="process__card">
-						<i class="fas fa-dumbbell"></i>‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎
-						<i class="fas fa-video"></i>
-						<h3>Follow a plan, record</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-					<div class="process__card">
-						<i class="fas fa-check-square"></i>
-						<h3>Check-in</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-					<div class="process__card">
-						<i class="fas fa-redo"></i>
-						<h3>Repeat</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- ---------- Why ---------- -->
-		<section class="why">
-			<div class="container">
-				<div class="why-title">
-					<h2>Why choose us?</h2>
-					<div class="underline"></div>
-				</div>
-				<div class="splitter">
-					<div class="why__info">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-						<br>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-				</div>
-				<div class="athlete__splitter">
-					<div class="athlete__card">
-						<img src="/images/photo.png" alt="">
-						<h3>Jaw</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus
-							nisi dolor, veniam cupiditate dolores soluta sequi voluptatibus sint ad
-							quos ut, in mollitia vero aut! Omnis illum enim eligendi!</p>
-					</div>
-					<div class="athlete__card">
-						<img src="/images/photo.png" alt="">
-						<h3>Soapwa</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus
-							nisi dolor, veniam cupiditate dolores soluta sequi voluptatibus sint ad
-							quos ut, in mollitia vero aut! Omnis illum enim eligendi!</p>
-					</div>
-					<div class="athlete__card">
-						<img src="/images/photo.png" alt="">
-						<h3>Yanlon</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus
-							nisi dolor, veniam cupiditate dolores soluta sequi voluptatibus sint ad
-							quos ut, in mollitia vero aut! Omnis illum enim eligendi!</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- ---------- About ---------- -->
-		<section class="about">
-			<div class="container">
-				<div class="splitter">
-					<div class="about__image">
-						<img src="images/photo.png" alt="">
-					</div>
-					<div class="about__info">
-						<h2>About us</h2>
-						<div class="underline"></div>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-						<br>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-	</main>
-
-	<!-- ---------- Footer ---------- -->
-	<footer class="footer">
+	<!-- ---------- Intro ---------- -->
+	<section class="intro">
 		<div class="container">
 			<div class="splitter">
-
-				<div class="footer-about">
-					<h2>About</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolorem
-						rerum
-						voluptatem velit a, labore repellat temporibus quos quia aliquam obcaecati
-						reprehenderit nostrum aperiam blanditiis eligendi quisquam, atque excepturi
-						odit.</p>
+				<div class="intro__video">
+					<video autoplay muted loop id="myVideo">
+						<source src="images/video.mp4" type="video/mp4">
+					</video>
 
 				</div>
-				<div class="footer-links">
-					<h2>Links</h2>
-					<ul>
-						<li>Home</li>
-						<li>About</li>
-						<li>Contact</li>
-						<li>Services</li>
-						<li>Instagram</li>
-					</ul>
+				<div class="intro__info">
 
+					<h2>Let's get stronger</h2>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+					<br>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+					<button>Learn more</button>
+
+				</div>
+				<!-- <div class="intro__image">
+						<img src="photo.png" alt="">
+					</div> -->
+			</div>
+		</div>
+	</section>
+
+	<!-- ---------- About ---------- -->
+	<section class="about">
+		<div class="container">
+			<div class="splitter">
+				<div class="about__image">
+					<img src="images/photo.png" alt="">
+				</div>
+				<div class="about__info">
+					<h2>About us</h2>
+					<div class="underline"></div>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+					<br>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
 				</div>
 			</div>
 		</div>
-	</footer>
+	</section>
 
-	<!-- ---------- Font-awesome ---------- -->
-	<script src="https://kit.fontawesome.com/62f9e37583.js" crossorigin="anonymous"></script>
-</body>
+	<!-- ---------- Process ---------- -->
+	<section class="process">
+		<div class="container">
+			<div class="process-title">
+				<h2>Our process</h2>
+				<div class="underline"></div>
+			</div>
+			<div class="splitter">
+				<div class="process__card">
+					<i class="fas fa-handshake"></i>
+					<h3>Intial consultation</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+				<div class="process__card">
+					<i class="fas fa-pencil-ruler"></i>
+					<h3>Plan a training block</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+				<div class="process__card">
+					<i class="fas fa-file-excel"></i>
+					<h3>Receive a training block</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+				<div class="process__card">
+					<i class="fas fa-dumbbell"></i>‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎‏‎ ‎
+					<i class="fas fa-video"></i>
+					<h3>Follow a plan, record</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+				<div class="process__card">
+					<i class="fas fa-check-square"></i>
+					<h3>Check-in</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+				<div class="process__card">
+					<i class="fas fa-redo"></i>
+					<h3>Repeat</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-</html>
+
+	<!-- ---------- Why ---------- -->
+	<section class="why">
+		<div class="container">
+			<div class="why-title">
+				<h2>Why choose us?</h2>
+				<div class="underline"></div>
+			</div>
+			<div class="splitter">
+				<div class="why__info">
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+					<br>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+			</div>
+			<div class="athlete__splitter">
+				<div class="athlete__card">
+					<img src="/images/photo.png" alt="">
+					<h3>Jaw</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus
+						nisi dolor, veniam cupiditate dolores soluta sequi voluptatibus sint ad
+						quos ut, in mollitia vero aut! Omnis illum enim eligendi!</p>
+				</div>
+				<div class="athlete__card">
+					<img src="/images/photo.png" alt="">
+					<h3>Soapwa</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus
+						nisi dolor, veniam cupiditate dolores soluta sequi voluptatibus sint ad
+						quos ut, in mollitia vero aut! Omnis illum enim eligendi!</p>
+				</div>
+				<div class="athlete__card">
+					<img src="/images/photo.png" alt="">
+					<h3>Yanlon</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae natus
+						nisi dolor, veniam cupiditate dolores soluta sequi voluptatibus sint ad
+						quos ut, in mollitia vero aut! Omnis illum enim eligendi!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ---------- About ---------- -->
+	<section class="about">
+		<div class="container">
+			<div class="splitter">
+				<div class="about__image">
+					<img src="images/photo.png" alt="">
+				</div>
+				<div class="about__info">
+					<h2>About us</h2>
+					<div class="underline"></div>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+					<br>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
+						dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
+						nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<%- include('./layouts/footer.ejs'); -%>

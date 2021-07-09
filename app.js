@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 
 // util
+const cors = require('cors');
 const helmet = require('helmet');
 
 // routes
@@ -16,7 +17,8 @@ app.set('view engine', 'ej');
 app.set('views', 'views');
 
 // middlewares
-app.use(helmet());
+// app.use(helmet());
+// app.use(cors());
 app.use(express.static('public'));
 app.use(indexRouter);
 app.use(errorController.get404);
