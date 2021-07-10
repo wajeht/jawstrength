@@ -1,16 +1,20 @@
+/* ---------- map ---------- */
+.map {
+    background-color: #f2f2f7;
+}
+
+.map-content {
+    margin-right: 30px;
+}
+
+iframe {
+    height: 300px;
+}
+
 /* ---------- contact ---------- */
 .contact {
-    height: 100vh;
-}
-
-.contact-body {
     background-color: white;
-    width: 90%;
-    margin: 25px;
-    padding: 33px;
-    border-radius: 5px;
 }
-
-form {
-    margin-top: 25px;
+.contact-body {
+    border-radius: 5px;
 }
