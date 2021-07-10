@@ -59,6 +59,10 @@ body {
     background-color: #f2f2f7;
 }
 
+footer {
+    flex-shrink: 0;
+}
+
 /* ---------- Utilitie ---------- */
 .splitter {
     margin: 30px 0;
