@@ -161,16 +161,16 @@ header {
     text-align: center;
     /* background-color: #fafafc; */
     /* background: url(/images/hero.png); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    height: 65vh;
-    overflow: hidden;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    height: 700px;
 }
 
 .intro__info {
-    width: 65%;
+    margin-top: 85px;
+    width: 70%;
 }
 
 .intro__image img {
@@ -179,17 +179,22 @@ header {
 
 .intro__video {
     z-index: -1;
-    overflow: hidden;
     position: absolute;
 }
 
 video {
     object-fit: cover;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+@media screen and (max-height: 1550px) {
+    video {
+        height: 100vh;
+    }
 }
 
 /* ---------- If video fails, bg image will show up ---------- */
