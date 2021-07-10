@@ -232,7 +232,7 @@ video {
     background-color: white;
 }
 .process .splitter {
-    margin-top: 70px;
+    /* margin-top: 70px; */
     text-align: center;
     flex-wrap: wrap;
 }
@@ -257,17 +257,19 @@ video {
 }
 
 .why .splitter {
-    margin-top: 70px;
     text-align: center;
     flex-wrap: wrap;
 }
 
-/* ---------- Why ---------- */
-.athlete__splitter {
-    display: flex;
+.why .underline {
+    background-color: white;
 }
 
+/* ---------- Why ---------- */
+
 .athlete__card {
+    flex-grow: 1;
+    width: 25%;
     color: black;
     background-color: white;
     margin: 25px;

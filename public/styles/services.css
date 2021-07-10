@@ -42,5 +42,50 @@
 
 /* ---------- freebie ---------- */
 .services__freebie {
+    background-color: #42669f;
+}
+
+.services__freebie h2 {
+    color: white;
+}
+
+.services__freebie-title .underline {
     background-color: white;
+}
+
+.services__freebie-intro {
+    color: white;
+}
+
+.services__freebie .splitter {
+    flex-wrap: wrap;
+}
+
+.services_freebie__card {
+    flex-grow: 1;
+    width: 25%;
+    color: black;
+    margin: 25px;
+    padding: 33px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.services__freebie img {
+    border-radius: 50%;
+}
+
+.services__freebie button {
+    width: 100%;
+}
+
+/* ---------- app ---------- */
+.services__app-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services__app-image img {
+    width: 50%;
+    border-radius: 50%;
 }
