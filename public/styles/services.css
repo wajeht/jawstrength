@@ -1,0 +1,46 @@
+/* ---------- intro ---------- */
+.services__intro {
+    color: white;
+    text-align: center;
+    /* background-color: #fafafc; */
+    background: url(/images/hero.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.services__intro__info {
+    width: 70%;
+}
+
+/* ---------- plan ---------- */
+.services__plan .splitter {
+    flex-wrap: wrap;
+}
+.services__plan__card {
+    background-color: white;
+}
+
+.services_plan__card {
+    flex-grow: 1;
+    width: 25%;
+    color: black;
+    background-color: white;
+    margin: 25px;
+    padding: 33px;
+    border-radius: 5px;
+}
+
+.services_plan__card img {
+    border-radius: 50%;
+}
+
+.services_plan__card button {
+    width: 100%;
+}
+
+/* ---------- freebie ---------- */
+.services__freebie {
+    background-color: white;
+}
