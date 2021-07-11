@@ -260,7 +260,7 @@ video {
     color: white;
     background: rgb(66, 102, 159);
     background: url(/images/background.webp),
-        linear-gradient(0deg, rgba(66,102,159,0) 0%, rgba(66,102,159,0.5536415249693627) 0%);
+        linear-gradient(0deg, rgba(66, 102, 159, 0) 0%, rgba(66, 102, 159, 0.5536415249693627) 0%);
 }
 
 .why .splitter {
@@ -273,7 +273,6 @@ video {
 }
 
 /* ---------- Why ---------- */
-
 .athlete__card {
     flex-grow: 1;
     width: 25%;
@@ -297,6 +296,21 @@ video {
     border-radius: 50%;
 }
 
+/* ---------- Ready ---------- */
+.ready {
+    background-color: white;
+}
+
+.ready img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 5px 10px 0 5px #42669f;
+}
+
+.ready button a {
+    color: white;
+}
+
 /* ---------- Footer ---------- */
 .footer {
     color: white;
@@ -309,6 +323,10 @@ video {
 
 .footer__about {
     width: 50%;
+}
+
+footer a {
+    color: white;
 }
 
 /* ---------- 404 ---------- */
