@@ -1,21 +1,93 @@
-<%- include('./layouts/header.ejs'); -%>
-    <section class="not-found">
-        <div class="container">
-            <div class="splitter">
-                <div class="not-found__image">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </div>
-                <div class="not-found__info">
-                    <h2>Not found</h2>
-                    <div class="underline"></div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dolorem
-                        rerum
-                        voluptatem velit a, labore repellat temporibus quos quia aliquam obcaecati
-                        reprehenderit nostrum aperiam blanditiis eligendi quisquam, atque excepturi
-                        odit.</p>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
 
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    body {
+        background-color: #F2F2F7;
+    }
+
+    p,
+    h2,
+    button {
+        margin: 10px 0;
+    }
+
+    button {
+        background-color: #42669F;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    button:hover {
+        background-color: #527ec4;
+    }
+
+    .center {
+        min-height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .error {
+        padding: 30px;
+        background-color: white;
+        width: 500px;
+        text-align: center;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+
+    <div class="center">
+
+        <div class="error">
+            <img src="images/photo.png" alt="">
+            <h2>Error</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cum similique
+                totam
+                quos vel quibusdam earum iste animi neque corrupti. Suscipit expedita nihil esse ea
+                eligendi. Earum adipisci rem quae!</p>
+
+
+            <a href="/">
+                <button>
+                    Go back home!
+                </button>
+            </a>
         </div>
-    </section>
-    <%- include('./layouts/footer.ejs'); -%>
+
+    </div>
+
+
+</body>
+
+</html>
