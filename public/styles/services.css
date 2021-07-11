@@ -8,11 +8,12 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 500px;
 }
 
 .services__intro__info {
-    margin-top: 85px;
+    /* margin-top: 30px; */
+    margin: auto 0;
     width: 70%;
 }
 

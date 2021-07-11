@@ -1,15 +1,52 @@
-/* ---------- contact ---------- */
-
-.contact-paragraph p {
-    width: 50%;
+/* ---------- intro ---------- */
+.contact__intro {
+    color: white;
+    text-align: center;
+    /* background-color: #fafafc; */
+    background: url(/images/hero.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
 }
 
-.contact {
+.contact__intro__info {
+    /* margin-top: 30px; */
+    margin: auto 0;
+    width: 70%;
+}
+
+/* ---------- contact ---------- */
+.contact p {
+    margin: 15px 0;
+}
+
+.contact .container {
     background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-paragraph {
     margin: 10px 0;
+}
+
+.contact-heading {
+    display: flex;
+}
+
+.contact-body {
+    width: 500px;
+}
+
+.contact__card {
+    margin: 0 25px;
+    text-align: center;
+}
+
+.contact .fas {
+    font-size: 2.8rem;
 }
 
 /* ---------- form ---------- */
@@ -20,8 +57,13 @@
 input[type='text'] {
     display: block;
     margin: 5px 0;
-    width: 300px;
+    /* width: 300px; */
+    width: 100%;
     height: 30px;
+}
+
+textarea {
+    width: 100%;
 }
 
 /* ---------- map ---------- */
