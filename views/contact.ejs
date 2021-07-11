@@ -1,39 +1,5 @@
 <%- include('./layouts/header.ejs'); -%>
 
-
-	<!-- ---------- Map ---------- -->
-	<section class="map">
-		<div class="container">
-			<div class="splitter">
-				<div class="map_info">
-					<div class="map-title">
-						<h2>Where we tain</h2>
-						<div class="underline"></div>
-					</div>
-					<div class="map-content">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-						<br>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores porro
-							dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut ab
-							nostrum quibusdam reiciendis omnis, aut vero eius tempora natus debitis.
-						</p>
-
-					</div>
-
-				</div>
-				<div class="map-frame">
-					<iframe src="https://maps.google.com/maps?q=3000%20Blackburn%20St,%20Amarillo,%20TX%207910&t=&z=13&ie=UTF8&iwloc=&output=embed"
-							frameborder="0" scrolling="no" marginheight="0"
-							marginwidth="0"></iframe>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
 	<!-- ---------- conatact ---------- -->
 	<section class="contact">
 		<div class="container">
@@ -51,25 +17,96 @@
 				</div>
 				<div class="contact-form">
 					<form action="/" method="post">
-						<label for="Name">Name</label>
-						<input type="text" name="name">
-						<br>
-						<label for="Name">email</label>
-						<input type="text" name="name">
-						<br>
-						<label for="Name">Subject</label>
-						<input type="text" name="name">
-						<br>
-						<label for="Name">Message</label>
-						<br>
-						<textarea name="" id="" cols="30" rows="10"></textarea>
-						<br>
+						<input type="text" name="name" id="name" placeholder="name" required>
+						<input type="text" name="email" id="email" placeholder="email" required>
+						<textarea name="message" id='message' cols="50" rows="20"
+								  placeholder="message" required></textarea><br>
 						<button type="submit">Send</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+	<!-- ---------- Map ---------- -->
+	<section class="map">
+		<div class="container">
+			<div class="splitter">
+				<div class="map-title">
+					<h2>Where we tain</h2>
+					<div class="underline"></div>
+				</div>
+				<div class="golds">
+					<div class="splitter-s">
+
+						<div class="map-info">
+							<h3>Golds gym</h3>
+							<div class="map-content">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+									porro
+									dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut
+									ab
+									nostrum quibusdam reiciendis omnis, aut vero eius tempora natus
+									debitis.
+								</p>
+								<br>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+									porro
+									dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut
+									ab
+									nostrum quibusdam reiciendis omnis, aut vero eius tempora natus
+									debitis.
+								</p>
+							</div>
+						</div>
+						<div class="map-frame">
+							<iframe src="https://maps.google.com/maps?q=3000%20Blackburn%20St,%20Amarillo,%20TX%207910&t=&z=13&ie=UTF8&iwloc=&output=embed"
+									frameborder="0" scrolling="no" marginheight="0"
+									marginwidth="0"></iframe>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="crunch">
+					<div class="splitter-s">
+						<div class="map_info">
+							<h3>Crunch</h3>
+							<div class="map-content">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+									porro
+									dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut
+									ab
+									nostrum quibusdam reiciendis omnis, aut vero eius tempora natus
+									debitis.
+								</p>
+								<br>
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+									porro
+									dolorem culpa doloremque, obcaecati officia quo pariatur. Eum ut
+									ab
+									nostrum quibusdam reiciendis omnis, aut vero eius tempora natus
+									debitis.
+								</p>
+							</div>
+						</div>
+						<div class="map-frame">
+							<iframe src="https://maps.google.com/maps?q=3000%20Blackburn%20St,%20Amarillo,%20TX%207910&t=&z=13&ie=UTF8&iwloc=&output=embed"
+									frameborder="0" scrolling="no" marginheight="0"
+									marginwidth="0"></iframe>
+						</div>
+
+
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
 
 
 

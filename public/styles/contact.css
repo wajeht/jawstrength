@@ -1,4 +1,43 @@
+/* ---------- contact ---------- */
+
+.contact-paragraph p {
+    width: 50%;
+}
+
+.contact {
+    background-color: white;
+}
+
+.contact-paragraph {
+    margin: 10px 0;
+}
+
+/* ---------- form ---------- */
+.contact-form {
+    margin: 10px 0;
+}
+
+input[type='text'] {
+    display: block;
+    margin: 5px 0;
+    width: 300px;
+    height: 30px;
+}
+
 /* ---------- map ---------- */
+.map .splitter {
+    flex-direction: column;
+}
+
+.splitter-s {
+    display: flex;
+}
+
+.golds,
+.crunch {
+    margin: 30px 0;
+}
+
 .map {
     background-color: #f2f2f7;
 }
@@ -9,12 +48,4 @@
 
 iframe {
     height: 300px;
-}
-
-/* ---------- contact ---------- */
-.contact {
-    background-color: white;
-}
-.contact-body {
-    border-radius: 5px;
 }

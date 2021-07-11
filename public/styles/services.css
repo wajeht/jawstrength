@@ -8,6 +8,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    height: 700px;
 }
 
 .services__intro__info {
@@ -86,5 +87,5 @@
     align-items: center;
 }
 .services__app-image img {
-	width: 80%;
+    width: 80%;
 }
