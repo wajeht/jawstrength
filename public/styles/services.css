@@ -12,8 +12,7 @@
 }
 
 .services__intro__info {
-    /* margin-top: 30px; */
-    margin: auto 0;
+    margin-top: 40px;
     width: 70%;
 }
 
@@ -90,4 +89,13 @@
 }
 .services__app-image img {
     width: 80%;
+}
+
+.services__app a {
+    color: black;
+    font-style: italic;
+}
+
+.services__app h4 {
+    margin: 10px 0 0 0;
 }

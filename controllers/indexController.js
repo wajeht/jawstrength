@@ -1,23 +1,27 @@
 exports.getIndex = (req, res, next) => {
     res.render('index.ejs', {
         pageTitle: 'JAWSTRENGTH',
+        path: '/',
     });
 };
 
 exports.getServices = (req, res, next) => {
     res.render('services.ejs', {
         pageTitle: 'JAWSTRENGTH | Services',
+        path: '/services',
     });
 };
 
 exports.getContact = (req, res, next) => {
     res.render('contact.ejs', {
         pageTitle: 'JAWSTRENGTH | Contact',
+        path: '/contact',
     });
 };
 
-exports.getTrainingVlog = (req, res, next) => {
-    res.render('contact.ejs', {
-        pageTitle: 'JAWSTRENGTH | TrainingVlog',
+exports.getAbout = (req, res, next) => {
+    res.render('about.ejs', {
+        pageTitle: 'JAWSTRENGTH | About',
+        path: '/about',
     });
 };

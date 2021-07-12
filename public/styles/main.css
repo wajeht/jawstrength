@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -16,6 +16,10 @@ a {
 
 img {
     width: 100%;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
@@ -49,7 +53,7 @@ button:hover {
 }
 
 main {
-    min-height: 100vh;
+    min-height: calc(100vh - 362px - 77px);
     flex-grow: 1;
 }
 
@@ -118,7 +122,41 @@ header {
     border-radius: 2px;
 }
 
+#strength {
+    font-weight: 300;
+    margin-left: -9px;
+}
+
+.barbell-left {
+    background-color: black;
+    margin-top: -10px;
+    margin-left: 79px;
+    width: 45px;
+    height: 4px;
+}
+
+.barbell-middle {
+    background-color: black;
+    height: 2px;
+    width: 120px;
+    margin-top: -3px;
+    margin-left: 79px;
+}
+
+.barbell-right {
+    background-color: black;
+    margin-top: -3px;
+    margin-left: 186px;
+    width: 45px;
+    height: 4px;
+}
+
 /* ---------- Nav ---------- */
+#active {
+    color: #42669f;
+    border-bottom: #42669f 2px solid;
+}
+
 .training-log {
     margin: 0 5px;
     background-color: #42669f;
@@ -225,10 +263,18 @@ video {
     background-color: #f2f2f7;
 }
 
+.about__image {
+    width: 180%;
+}
+
 .about__image img {
     width: 80%;
     border-radius: 50%;
     box-shadow: 5px 10px 0 5px #42669f;
+}
+
+.about a {
+    color: white;
 }
 
 /* ---------- Process ---------- */
@@ -285,6 +331,7 @@ video {
 
 .athlete__card h3 {
     text-align: center;
+    margin: 0;
 }
 
 .athlete__card .underline {

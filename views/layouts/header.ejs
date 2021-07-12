@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/services.css">
 	<link rel="stylesheet" href="styles/contact.css">
-
+	<script type="text/javascript" src="http://livejs.com/live.js"></script>
 </head>
 
 <body>
@@ -22,16 +22,25 @@
 			<div class="header__logo">
 				<h1>
 					<a href="/">
-						<spam id="jaw">JAW</spam>
-						<spam id="strength">STRENGTH</spam </a>
+						<span id="jaw">JAW</span>
+						<span id="strength">STRENGTH</span </a>
+						<div class="barbell-left">
+						</div>
+						<div class="barbell-middle">
+						</div>
+						<div class="barbell-right">
+						</div>
 				</h1>
 			</div>
 			<nav class="header__nav">
 				<ul class="header__nav-ul">
-					<li><a href="/services">Services</a></li>
-					<li><a href="/contact">Contact</a></li>
-					<li><a class="training-log" id="training-log"
-						   href="/training-log">Training-log</a></li>
+					<li><a id="<%= path === '/services' ? 'active' : '' %>"
+						   href="/services">services</a>
+					</li>
+					<li><a id="<%= path === '/contact' ? 'active' : '' %>"
+						   href="/contact">contact</a></li>
+					<li><a class="training-log" id="training-log" href="https://tvl.jawstrength.com"
+						   target="_blank" rel="noopener noreferrer">Training-log</a></li>
 				</ul>
 			</nav>
 		</div>

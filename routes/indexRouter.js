@@ -8,6 +8,6 @@ const indexController = require('../controllers/indexController.js');
 router.get('/', indexController.getIndex);
 router.get('/services', indexController.getServices);
 router.get('/contact', indexController.getContact);
-router.get('/training-vlog', indexController.getTrainingVlog);
+router.get('/about', indexController.getAbout);
 
 module.exports = router;
