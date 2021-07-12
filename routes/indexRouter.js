@@ -9,5 +9,7 @@ router.get('/', indexController.getIndex);
 router.get('/services', indexController.getServices);
 router.get('/contact', indexController.getContact);
 router.get('/about', indexController.getAbout);
+router.get('/terms', indexController.getTerms);
+router.get('/privacy', indexController.getPrivacy);
 
 module.exports = router;

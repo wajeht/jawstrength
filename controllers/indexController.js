@@ -25,3 +25,17 @@ exports.getAbout = (req, res, next) => {
         path: '/about',
     });
 };
+
+exports.getPrivacy = (req, res, next) => {
+    res.render('privacy.ejs', {
+        pageTitle: 'JAWSTRENGTH | Privacy',
+        path: '/privacy',
+    });
+};
+
+exports.getTerms = (req, res, next) => {
+    res.render('terms.ejs', {
+        pageTitle: 'JAWSTRENGTH | About',
+        path: '/terms',
+    });
+};

@@ -216,6 +216,10 @@ header {
     height: 700px;
 }
 
+.intro__info a {
+    color: white;
+}
+
 .intro__info {
     margin-top: 85px;
     width: 70%;
