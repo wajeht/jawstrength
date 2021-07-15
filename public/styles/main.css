@@ -117,7 +117,7 @@ header {
 /* ---------- Logo ---------- */
 #jaw {
     /* background-color: #42669f; */
-    /* color: white; */
+    color: #42669f;
     /* padding: 0 5px */
     /* border-radius: 2px; */
 }
@@ -229,7 +229,8 @@ header {
     /* background-attachment: fixed; */
     /* background-position: center; */
     /* background-size: cover; */
-    height: 700px;
+    /* height: 700px; */
+    height: 100vh;
 }
 
 .intro__info a {
@@ -237,7 +238,7 @@ header {
 }
 
 .intro__info {
-    margin-top: 85px;
+    margin-top: 350px;
     width: 70%;
 }
 
