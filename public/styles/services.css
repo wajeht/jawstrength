@@ -65,6 +65,7 @@
 
 .services__freebie-intro {
     color: white;
+    text-align: center;
 }
 
 .services__freebie .splitter {
@@ -79,6 +80,14 @@
     padding: 33px;
     border-radius: 5px;
     background-color: white;
+}
+
+.services_freebie__card li {
+    list-style: disc !important;
+}
+
+.services_freebie__card ul {
+    padding-left: 25px;
 }
 
 .services__freebie img {
