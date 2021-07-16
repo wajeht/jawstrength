@@ -220,6 +220,7 @@ header {
 }
 
 /* ---------- Intro ---------- */
+
 .intro {
     color: white;
     text-align: center;
@@ -231,6 +232,9 @@ header {
     /* background-size: cover; */
     /* height: 700px; */
     height: 100vh;
+
+    justify-content: center;
+    display: flex;
 }
 
 .intro__info a {
@@ -238,8 +242,8 @@ header {
 }
 
 .intro__info {
-    margin-top: 350px;
-    width: 70%;
+    /* margin-top: 500px; */
+    width: 85%;
 }
 
 .intro__image img {
@@ -254,7 +258,8 @@ header {
 video {
     object-fit: cover;
     width: 100vw;
-    height: 50vh;
+    /* height: 50vh; */
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;

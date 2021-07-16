@@ -24,6 +24,14 @@
     background-color: white;
 }
 
+.services_plan__card li {
+    list-style: disc !important;
+}
+
+.services_plan__card ul {
+    padding-left: 25px;
+}
+
 .services_plan__card {
     flex-grow: 1;
     width: 25%;
