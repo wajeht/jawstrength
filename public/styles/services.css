@@ -105,7 +105,7 @@
     align-items: center;
 }
 .services__app-image img {
-    width: 80%;
+    width: 65%;
 }
 
 .services__app a {
@@ -115,4 +115,37 @@
 
 .services__app h4 {
     margin: 10px 0 0 0;
+}
+
+.services__app-title-download-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services__app-title-download-links img {
+    width: 17%;
+    margin-left: 10px;
+}
+
+.services__app-title-download-links button {
+    margin-left: 10px;
+}
+
+.services__app-title-download-links a {
+    font-style: normal;
+    color: white;
+}
+
+/* ---------- training-vide-log ---------- */
+.service__training-vlog {
+    background-color: white;
+}
+.service__training-vlog-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service__training-vlog-image img {
+    width: 65%;
 }
