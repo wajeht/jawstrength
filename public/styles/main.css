@@ -225,11 +225,11 @@ header {
     color: white;
     text-align: center;
     /* background-color: #fafafc; */
-    /* background: url(/images/hero.png); */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-    /* background-size: cover; */
+    /* background: url(/images/hero.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
     /* height: 700px; */
     height: 100vh;
 

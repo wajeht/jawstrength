@@ -117,24 +117,15 @@
     margin: 10px 0 0 0;
 }
 
-.services__app-title-download-links {
-    margin-top: 25px;
-    display: flex;
+/* .services__app-title-download-links a {
+    text-align: center;
     justify-content: center;
     align-items: center;
-}
+} */
+
 .services__app-title-download-links img {
-    width: 17%;
-    margin-left: 10px;
-}
-
-.services__app-title-download-links button {
-    margin-left: 10px;
-}
-
-.services__app-title-download-links a {
-    font-style: normal;
-    color: white;
+    margin-top: 25px;
+    width: 15%;
 }
 
 /* ---------- training-vide-log ---------- */
@@ -147,5 +138,10 @@
     align-items: center;
 }
 .service__training-vlog-image img {
-    width: 65%;
+    width: 35%;
+    border-radius: 50%;
+}
+
+.service__training-vlog-image img {
+    margin-bottom: 15px;
 }
