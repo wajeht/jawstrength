@@ -1,0 +1,76 @@
+<%- include('./layouts/header.ejs'); -%>
+
+	<!-- ---------- training-vlog ---------- -->
+	<section class="application">
+		<div class="container">
+			<div class="application-content">
+				<div class="application-title">
+					<h2>Application</h2>
+					<div class="underline"></div>
+				</div>
+				<div class="application-intro">
+					<p>Please answer all the requirement as accurate as you can. This will help us
+						identify your training history, thus helping you reach your goals faster.
+					</p>
+				</div>
+				<div class="application-form">
+					<form action="athlete-application" method="post">
+						<br>
+						<h3>Athlete Info</h3>
+						<label for="name">Name: </label> <input type="text">
+						<label for="name">Age: </label> <input type="text">
+						<label for="name">Email:</label> <input type="text">
+						<label for="name">Years of training: </label> <input type="text">
+						<label for="name">Have you competed before?</label> <input type="text">
+						<label for="name">Social media handle: (instagram..)</label> <input
+							   type="text">
+						<br>
+						<h3>Training Info</h3>
+						<label for="name">Are you folowing any programs?</label> <br>
+						<label for="">Yes</label><input type="radio" name="" id="">
+						<label for="">No</label><input type="radio" name="" id="">
+						<br>
+						<br>
+						<label for="">If yes, attatch your training log belo:</label>
+						<br>
+						<input type="file" name="" id="">
+						<br>
+						<br>
+
+						<h4>Squat</h4>
+						<label for="name">Current max: </label> <input type="text">
+						<label for="name">Tell us about your squat: (frequency, programming, injury,
+							etc..)</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+						<br>
+						<h4>Bench</h4>
+						<label for="name">Current max:</label> <input type="text">
+						<label for="name">Tell us about your bench: (frequency, programming, injury,
+							etc..)</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+						<br>
+						<h4>Deadlift</h4>
+						<label for="name">Current max: </label> <input type="text">
+						<label for="name">Tell us about your deadlift: (frequency, programming,
+							injury,
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+
+							<br>
+							<br>
+							<h3>Athlete goals</h3>
+							<label for="name">Are you competting soon?</label> <input type="text">
+							<label for="name">If yes, when?</label> <input type="text">
+							<label for="">if no, then what is your goals? (ex: get stronger, bring
+								up
+								squat, refine bench, etc..)</label>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+							<button type="submit">Send</button>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<%- include('./layouts/footer.ejs'); -%>

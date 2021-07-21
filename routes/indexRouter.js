@@ -12,4 +12,6 @@ router.get('/about', indexController.getAbout);
 router.get('/terms', indexController.getTerms);
 router.get('/privacy', indexController.getPrivacy);
 
+router.post('/application', indexController.postApplication);
+
 module.exports = router;

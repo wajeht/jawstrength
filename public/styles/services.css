@@ -1,3 +1,15 @@
+/* ---------- utilities ---------- */
+.disable-button {
+    background-color: gray;
+    width: 100%;
+    cursor: default;
+    text-decoration: line-through;
+}
+
+.disable-button:hover {
+    background-color: gray;
+}
+
 /* ---------- intro ---------- */
 .services__intro {
     color: white;

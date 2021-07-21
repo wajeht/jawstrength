@@ -12,6 +12,15 @@ exports.getServices = (req, res, next) => {
     });
 };
 
+exports.postApplication = (req, res, next) => {
+    const { micro_cycle } = req.body;
+    console.log(micro_cycle);
+
+    res.render('application.ejs', {
+        pageTitle: 'JAWSTRENGTH | Application',
+        path: '/application',
+    });
+};
 exports.getContact = (req, res, next) => {
     res.render('contact.ejs', {
         pageTitle: 'JAWSTRENGTH | Contact',
