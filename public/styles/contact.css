@@ -39,12 +39,8 @@
     display: flex;
 }
 
-.contact-body {
-    width: 700px;
-}
-
 .contact__card {
-    margin: 0 25px;
+    /* margin: 0 25px; */
     text-align: center;
 }
 
@@ -53,6 +49,10 @@
 }
 
 /* ---------- form ---------- */
+.contact .splitter {
+    flex-direction: column;
+}
+
 .contact-form {
     margin: 10px 0;
 }

@@ -129,15 +129,16 @@
     margin: 10px 0 0 0;
 }
 
-/* .services__app-title-download-links a {
+.services__app-title-download-links {
     text-align: center;
     justify-content: center;
     align-items: center;
-} */
+}
 
 .services__app-title-download-links img {
     margin-top: 25px;
-    width: 15%;
+    width: auto;
+    height: 55px;
 }
 
 /* ---------- training-vide-log ---------- */
@@ -150,10 +151,10 @@
     align-items: center;
 }
 .service__training-vlog-image img {
-    width: 35%;
-    border-radius: 50%;
+    width: 60%;
+    /* border-radius: 50%; */
 }
 
 .service__training-vlog-image img {
-    margin-bottom: 15px;
+    margin-bottom: -30px;
 }
