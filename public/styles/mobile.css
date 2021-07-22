@@ -19,6 +19,14 @@
         text-align: center;
     }
 
+    .process .splitter {
+        flex-direction: column;
+    }
+
+    .process__card {
+        width: fit-content;
+    }
+
     .why .splitter {
         flex-direction: column;
     }
@@ -29,6 +37,18 @@
 
     .ready .splitter {
         flex-direction: column;
+    }
+
+    .footer .splitter {
+        flex-direction: column;
+    }
+
+    .footer__about {
+        width: fit-content;
+    }
+
+    .footer__card {
+        width: fit-content;
     }
 
     /* ---------- service ---------- */
