@@ -32,9 +32,6 @@
 .services__plan .splitter {
     flex-wrap: wrap;
 }
-.services__plan__card {
-    background-color: white;
-}
 
 .services_plan__card li {
     list-style: disc !important;

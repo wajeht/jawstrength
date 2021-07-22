@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+    /* ---------- main ---------- */
+    .header__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .about .splitter {
+        flex-direction: column;
+    }
+
+    .about__image {
+        width: fit-content;
+        text-align: center;
+    }
+
+    .why .splitter {
+        flex-direction: column;
+    }
+
+    .athlete__card {
+        width: fit-content;
+    }
+
+    .ready .splitter {
+        flex-direction: column;
+    }
+
+    /* ---------- service ---------- */
+    .services__plan .splitter {
+        flex-direction: column;
+    }
+
+    .services_plan__card {
+        width: fit-content;
+    }
+
+    .services__freebie .splitter {
+        flex-direction: column;
+    }
+    .services_freebie__card {
+        width: fit-content;
+    }
+}
