@@ -21,10 +21,13 @@
     background-position: center;
     background-size: cover;
     height: 500px;
+
+    justify-content: center;
+    display: flex;
 }
 
 .services__intro__info {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     width: 70%;
 }
 

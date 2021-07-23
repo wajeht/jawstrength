@@ -9,10 +9,13 @@
     background-position: center;
     background-size: cover;
     height: 500px;
+
+    justify-content: center;
+    display: flex;
 }
 
 .contact__intro__info {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     /* margin: auto 0; */
     width: 70%;
 }

@@ -1,4 +1,12 @@
 @media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    .underline {
+        margin: 0 auto;
+    }
+
     /* ---------- main ---------- */
     .header__container {
         flex-direction: row;
@@ -66,5 +74,21 @@
     }
     .services_freebie__card {
         width: fit-content;
+    }
+
+    /* ---------- contact map ---------- */
+    .splitter-s {
+        flex-direction: column;
+    }
+
+    .map-frame {
+        padding-top: 10px;
+    }
+
+    /* ---------- footer ---------- */
+    .footer .splitter {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
