@@ -22,6 +22,10 @@
         flex-direction: column;
     }
 
+    .intro {
+        height: calc(100vh - 70px);
+    }
+
     .about__image {
         width: fit-content;
         text-align: center;

@@ -68,10 +68,10 @@ footer {
 }
 
 blockquote {
-    text-align: center;
+    /* text-align: center; */
     padding: 20px;
     background-color: #f2f2f7;
-    width: 250px;
+    /* width: 250px; */
     font-style: italic;
     margin: 0 auto;
     border-radius: 10px;
