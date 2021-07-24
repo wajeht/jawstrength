@@ -110,6 +110,25 @@
     width: 100%;
 }
 
+/* ---------- training-vide-log ---------- */
+.service__training-vlog {
+    background-color: white;
+}
+.service__training-vlog-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__training-vlog-image img {
+    width: 60%;
+    /* border-radius: 50%; */
+}
+
+/* .service__training-vlog-image img {
+    margin-bottom: -30px;
+} */
+
 /* ---------- app ---------- */
 .services__app-image {
     display: flex;
@@ -125,9 +144,9 @@
     font-style: italic;
 }
 
-.services__app h4 {
+/* .services__app h4 {
     margin: 10px 0 0 0;
-}
+} */
 
 .services__app-title-download-links {
     text-align: center;
@@ -139,22 +158,4 @@
     margin-top: 25px;
     width: auto;
     height: 55px;
-}
-
-/* ---------- training-vide-log ---------- */
-.service__training-vlog {
-    background-color: white;
-}
-.service__training-vlog-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.service__training-vlog-image img {
-    width: 60%;
-    /* border-radius: 50%; */
-}
-
-.service__training-vlog-image img {
-    margin-bottom: -30px;
 }
