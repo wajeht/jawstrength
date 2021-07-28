@@ -1,3 +1,17 @@
+const nodemailer = require('nodemailer');
+const config = require('../config/config.js');
+
+const smtpConfig = {
+    host: config.email.host,
+    port: config.email.port,
+    secure: config.email.secure,
+    auth: {
+        user: config.email.auth_user,
+        pass: config.email.auth_pass,
+    },
+};
+const transporter = nodemailer.createTransport(smtpConfig);
+
 exports.getIndex = (req, res, next) => {
     res.render('index.ejs', {
         pageTitle: 'JAWSTRENGTH',
@@ -48,8 +62,18 @@ exports.getThankYou = (req, res, next) => {
 };
 
 exports.postContact = (req, res, next) => {
-    res.redirect('/thank-you')
-}
+    try {
+        transporter.sendMail({
+            from: 'contact@jawstrength.com',
+            to: 'contact@jawstrength.com',
+            subject: `JAWSTRENGTH.COM: CONTACT - ${req.body.name}, ${req.body.email}`,
+            text: req.body.message,
+        });
+        return res.redirect('/thank-you');
+    } catch (err) {
+        if (err) next(err);
+    }
+};
 
 exports.postApplication = (req, res, next) => {
     const { micro_cycle } = req.body;
