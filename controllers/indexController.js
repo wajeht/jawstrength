@@ -12,15 +12,6 @@ exports.getServices = (req, res, next) => {
     });
 };
 
-exports.postApplication = (req, res, next) => {
-    const { micro_cycle } = req.body;
-    console.log(micro_cycle);
-
-    res.render('application.ejs', {
-        pageTitle: 'JAWSTRENGTH | Application',
-        path: '/application',
-    });
-};
 exports.getContact = (req, res, next) => {
     res.render('contact.ejs', {
         pageTitle: 'JAWSTRENGTH | Contact',
@@ -47,4 +38,30 @@ exports.getTerms = (req, res, next) => {
         pageTitle: 'JAWSTRENGTH | About',
         path: '/terms',
     });
+};
+
+exports.getThankYou = (req, res, next) => {
+    res.render('thank-you.ejs', {
+        pageTitle: 'JAWSTRENGTH | Thank you',
+        path: '/thank-you',
+    });
+};
+
+exports.postContact = (req, res, next) => {
+    res.redirect('/thank-you')
+}
+
+exports.postApplication = (req, res, next) => {
+    const { micro_cycle } = req.body;
+    console.log(micro_cycle);
+
+    res.render('application.ejs', {
+        pageTitle: 'JAWSTRENGTH | Application',
+        path: '/application',
+    });
+};
+
+exports.postAthleteApplication = (req, res, next) => {
+    console.log(req.body);
+    res.redirect('https://calendly.com/jawstrength/');
 };
