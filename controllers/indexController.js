@@ -76,8 +76,8 @@ exports.postContact = (req, res, next) => {
 };
 
 exports.postApplication = (req, res, next) => {
-    const { micro_cycle } = req.body;
-    console.log(micro_cycle);
+    // const { micro_cycle } = req.body;
+    // console.log(micro_cycle);
 
     res.render('application.ejs', {
         pageTitle: 'JAWSTRENGTH | Application',
@@ -86,6 +86,15 @@ exports.postApplication = (req, res, next) => {
 };
 
 exports.postAthleteApplication = (req, res, next) => {
-    console.log(req.body);
-    res.redirect('https://calendly.com/jawstrength/');
+    try {
+        transporter.sendMail({
+            from: `"JAWSTRENGTH.COM" <contact@jawstrength.com>`,
+            to: 'contact@jawstrength.com',
+            subject: `${req.body.name} - ${req.body.email}`,
+            html: `<pre> ${JSON.stringify(req.body, null, "  ")} </pre>`,
+        });
+        return res.redirect('https://calendly.com/jawstrength/');
+    } catch (err) {
+        if (err) next(err);
+    }
 };
