@@ -64,10 +64,10 @@ exports.getThankYou = (req, res, next) => {
 exports.postContact = (req, res, next) => {
     try {
         transporter.sendMail({
-            from: 'contact@jawstrength.com',
+            from: `"JAWSTRENGTH.COM" <contact@jawstrength.com>`,
             to: 'contact@jawstrength.com',
-            subject: `JAWSTRENGTH.COM: CONTACT - ${req.body.name}, ${req.body.email}`,
-            text: req.body.message,
+            subject: `${req.body.name} - ${req.body.email}`,
+            html: `<pre> ${req.body.message} </pre>`,
         });
         return res.redirect('/thank-you');
     } catch (err) {
