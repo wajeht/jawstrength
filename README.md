@@ -39,32 +39,40 @@ You must have Nodejs installed on your computer to have this project run locally
 
 ## Installation
 
-1. After you have install Nodejs, you can start workig on the project using the following instructions.
-2. Clone the repo
+1.  After you have install Nodejs, you can start workig on the project using the following instructions.
+2.  Clone the repo
 
     ```
     git clone https://github.com/wajeht/jawstrength.git
     ```
 
-3. Install NPM packages
+3.  Install NPM packages
 
     ```
     npm install
     ```
 
-4. Enter your make a new file inside /server and called it .env
+4.  Rename the .env.example file into .evn and rename with your credentials
 
-    ```
+    ```bash
+    # Server port
     PORT=3000
+
+    # Email credentials
+    EMAIL_HOST='mail.youremailsmptserver.com'
+    EMAIL_PORT=465
+    EMAIL_SECURE=true
+    EMAIL_AUTH_USER='contact@youremail.com'
+    EMAIL_AUTH_PASS='yourpassword'
     ```
 
-5. Go go the server folder and type in the run command.
+5.  Go go the server folder and type in the run command.
 
     ```
     npm run dev
     ```
 
-6. Now you can visit the following url on your browser.
+6.  Now you can visit the following url on your browser.
     ```
     http://localhost:3000/
     ```
