@@ -1,118 +1,142 @@
 <%- include('./layouts/header.ejs'); -%>
 
-	<!-- ---------- Intro ---------- -->
-	<section class="contact__intro">
-		<div class="container">
-			<div class="splitter">
-				<div class="contact__intro__info">
-					<h2>Contact us</h2>
-					<p>If you are interesteod in joining our team of athletes have any questoins for
-						us, feel free to drop an email below. We will get back to as soon as we can.
+<!-- ---------- Intro ---------- -->
+<section class="contact__intro">
+	<div class="container">
+		<div class="splitter">
+			<div class="contact__intro__info">
+				<h2>Contact us</h2>
+				<p>
+					If you are interesteod in joining our team of athletes have any
+					questoins for us, feel free to drop an email below. We will get back
+					to as soon as we can.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ---------- conatact ---------- -->
+<section class="contact">
+	<div class="container">
+		<div class="splitter">
+			<div class="contact-heading">
+				<div class="contact__card">
+					<i class="fas fa-phone-alt"></i>
+					<h4>Phone</h4>
+					<p>(806)318-8390</p>
+				</div>
+				<div class="contact__card">
+					<i class="fas fa-map-marker-alt"></i>
+					<h4>Address</h4>
+					<p>420 Street, City, State</p>
+				</div>
+				<div class="contact__card">
+					<i class="fas fa-envelope"></i>
+					<h4>Email</h4>
+					<p>contact@jawstrength.com</p>
+				</div>
+			</div>
+
+			<div class="contact-body">
+				<div class="contact-paragraph">
+					<p>
+						Phone support is available day and night for existing customers,
+						account support, and general inquiries.
 					</p>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- ---------- conatact ---------- -->
-	<section class="contact">
-		<div class="container">
-			<div class="splitter">
-				<div class="contact-heading">
-					<div class="contact__card">
-						<i class="fas fa-phone-alt"></i>
-						<h4>Phone</h4>
-						<p>(806)318-8390</p>
-					</div>
-					<div class="contact__card">
-						<i class="fas fa-map-marker-alt"></i>
-						<h4>Address</h4>
-						<p>420 Street, City, State</p>
-					</div>
-					<div class="contact__card">
-						<i class="fas fa-envelope"></i>
-						<h4>Email</h4>
-						<p>contact@jawstrength.com</p>
-					</div>
-				</div>
-
-				<div class="contact-body">
-					<div class="contact-paragraph">
-						<p>Phone support is available day and night for existing customers, account
-							support, and general inquiries.</p>
-					</div>
-					<div class="contact-form">
-						<form action="/contact" method="post">
-							<input type="text" name="name" id="name" placeholder="name" required>
-							<input type="text" name="email" id="email" placeholder="email" required>
-							<textarea name="message" id='message' cols="50" rows="20"
-									  placeholder="message" required></textarea><br>
-							<div class="contact-form-btn">
-								<button type="submit">Send</button>
-							</div>
-						</form>
-					</div>
+				<div class="contact-form">
+					<form action="/contact" method="post">
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="name"
+							required
+						/>
+						<input
+							type="text"
+							name="email"
+							id="email"
+							placeholder="email"
+							required
+						/>
+						<textarea
+							name="message"
+							id="message"
+							cols="50"
+							rows="20"
+							placeholder="message"
+							required
+						></textarea
+						><br />
+						<div class="contact-form-btn">
+							<button type="submit">Send</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-
-	<!-- ---------- Map ---------- -->
-	<section class="map">
-		<div class="container">
-			<div class="splitter">
-				<div class="map-title">
-					<h2>Where we tain</h2>
-					<div class="underline"></div>
-				</div>
-				<div class="golds">
-					<div class="splitter-s">
-
-						<div class="map-info">
-							<h3>Golds gym</h3>
-							<div class="map-content">
-								<h4>Address</h4>
-								<p>3000 Blackburn St, Amarillo, TX 79109</p>
-								<br>
-								<h4>Hours</h4>
-								<p>6:30PM-7:30PM Monday, Tuesday, Thursday, and Saturday</p>
-							</div>
-						</div>
-						<div class="map-frame">
-							<iframe src="https://maps.google.com/maps?q=3000%20Blackburn%20St,%20Amarillo,%20TX%207910&t=&z=13&ie=UTF8&iwloc=&output=embed"
-									frameborder="0" scrolling="no" marginheight="0"
-									marginwidth="0"></iframe>
+<!-- ---------- Map ---------- -->
+<section class="map">
+	<div class="container">
+		<div class="splitter">
+			<div class="map-title">
+				<h2>Where we tain</h2>
+				<div class="underline"></div>
+			</div>
+			<div class="golds">
+				<div class="splitter-s">
+					<div class="map-info">
+						<h3>Golds gym</h3>
+						<div class="map-content">
+							<h4>Address</h4>
+							<p>3000 Blackburn St, Amarillo, TX 79109</p>
+							<br />
+							<h4>Hours</h4>
+							<p>6:30PM-7:30PM Monday, Tuesday, Thursday, and Saturday</p>
 						</div>
 					</div>
-				</div>
-
-				<div class="crunch">
-					<div class="splitter-s">
-						<div class="map_info">
-							<h3>Crunch</h3>
-							<div class="map-content">
-								<h4>Address</h4>
-								<p>2020 S Georgia St, Amarillo, TX 79109</p>
-								<br>
-								<h4>Hours</h4>
-								<p>6:30PM-7:30PM Monday, Tuesday, Thursday, and Saturday</p>
-							</div>
-						</div>
-						<div class="map-frame">
-							<iframe src="   https://maps.google.com/maps?q=%202020%20S%20Georgia%20St,%20Amarillo,%20TX%2079109&t=&z=13&ie=UTF8&iwloc=&output=embed  "
-									frameborder="0" scrolling="no" marginheight="0"
-									marginwidth="0"></iframe>
-						</div>
+					<div class="map-frame">
+						<iframe
+							src="https://maps.google.com/maps?q=3000%20Blackburn%20St,%20Amarillo,%20TX%207910&t=&z=13&ie=UTF8&iwloc=&output=embed"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+						></iframe>
 					</div>
 				</div>
+			</div>
 
+			<div class="crunch">
+				<div class="splitter-s">
+					<div class="map_info">
+						<h3>Crunch</h3>
+						<div class="map-content">
+							<h4>Address</h4>
+							<p>2020 S Georgia St, Amarillo, TX 79109</p>
+							<br />
+							<h4>Hours</h4>
+							<p>6:30PM-7:30PM Monday, Tuesday, Thursday, and Saturday</p>
+						</div>
+					</div>
+					<div class="map-frame">
+						<iframe
+							src="   https://maps.google.com/maps?q=%202020%20S%20Georgia%20St,%20Amarillo,%20TX%2079109&t=&z=13&ie=UTF8&iwloc=&output=embed  "
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"
+						></iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-
-
-
-
-	<%- include('./layouts/footer.ejs'); -%>
+<%- include('./layouts/footer.ejs'); -%>
