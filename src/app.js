@@ -1,6 +1,7 @@
 import path from 'path';
 import cors from 'cors';
 import helmet from 'helmet';
+import compression from 'compression';
 
 import express from 'express';
 const app = express();
@@ -10,12 +11,13 @@ import WebRoutes from './web/web.routes.js';
 
 app.use(helmet({contentSecurityPolicy: false})); // prettier-ignore
 app.use(cors());
+app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(process.cwd(), 'src', 'web', 'public')));
 app.set('view engine', 'ej');
 app.set('views', path.resolve(path.join(process.cwd(), 'src', 'web', 'views')));
-
+app.use(rateLimiter);
 app.use(WebRoutes);
 
 app.use((req, res, next) => res.status(404).render('404.ejs', { path: '/not-found', pageTitle: 'JawStrength: 404' })); // 404
