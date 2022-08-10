@@ -1,4 +1,4 @@
-<p align="center"><img style="width: 100%; height: 300px; object-fit: cover; object-position: 20% 10%;" src="https://raw.githubusercontent.com/wajeht/jawstrength/main/src/web/public/images/hero.png"></p>
+<img style="width: 100%; height: 300px; object-fit: cover; object-position: 20% 10%;" src="https://raw.githubusercontent.com/wajeht/jawstrength/main/src/web/public/images/hero.png">
 
 # <p align="center">JawStrength</p>
 
