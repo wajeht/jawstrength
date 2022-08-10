@@ -7,6 +7,7 @@ import express from 'express';
 const app = express();
 
 import { SERVER } from './config/constants.js';
+import rateLimiter from './config/rateLimiter.js';
 import WebRoutes from './web/web.routes.js';
 
 app.use(helmet({contentSecurityPolicy: false})); // prettier-ignore
