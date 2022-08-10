@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      <%= pageTitle %>
+    </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/application.css">
+    <link rel="stylesheet" href="styles/privacy.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ---------- linkedin stuff starts ---------- -->
+    <meta name="title" property="og:title" content="JawStrength">
+    <meta property="og:type" content="Full-stack Web App">
+    <meta name="image" property="og:image" content="images/linkedin.jpg" />
+    <meta name="description" content="Comprehensive coaching service for both in person and remote strength training">
+    <meta name="author" content="wajeht">
+    <!-- ---------- linkedin stuff end ---------- -->
+
+  </head>
+
+  <body>
+
+    <!-- ---------- Header ---------- -->
+    <header>
+      <div class="header__container">
+        <div class="header__logo">
+          <h1>
+            <a href="/">
+              <span id="jaw">JAW</span>
+              <span id="strength">STRENGTH</span </a>
+              <div class="barbell-left">
+              </div>
+              <div class="barbell-left-ring"></div>
+              <div class="barbell-middle">
+              </div>
+              <div class="barbell-right-ring"></div>
+              <div class="barbell-right">
+              </div>
+          </h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-ul">
+            <li><a id="<%= path === '/services' ? 'active' : '' %>" href="/services">services</a>
+            </li>
+            <li><a id="<%= path === '/contact' ? 'active' : '' %>" href="/contact">contact</a></li>
+
+            <!-- <li><a class="training-log" id="training-log" href="https://tvl.jawstrength.com" target="_blank"
+								rel="noopener noreferrer">Training-log</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>

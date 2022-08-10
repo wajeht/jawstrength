@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 1.7rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #42669f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #527ec4;
+}
+
+main {
+  min-height: calc(100vh - 362px - 77px);
+  flex-grow: 1;
+}
+
+header,
+body {
+  flex-shrink: 0;
+  background-color: #f2f2f7;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+blockquote {
+  /* text-align: center; */
+  padding: 20px;
+  background-color: #f2f2f7;
+  /* width: 250px; */
+  font-style: italic;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* ---------- Utilitie ---------- */
+.splitter {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.underline {
+  height: 4px;
+  border-radius: 5px;
+  width: 70px;
+  margin: 5px 0;
+  background-color: #42669f;
+}
+
+/* ---------- Header ---------- */
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: #ededf4 1px solid;
+}
+
+.header__container {
+  padding: 0 30px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.header__logo a {
+  color: black;
+}
+
+/* ---------- Logo ---------- */
+#jaw {
+  /* background-color: #42669f; */
+  color: #42669f;
+  /* padding: 0 5px */
+  /* border-radius: 2px; */
+}
+
+#strength {
+  font-weight: 300;
+  margin-left: -9px;
+}
+
+.barbell-left {
+  background-color: black;
+  margin-top: -8px;
+  margin-left: 68.5px;
+  width: 45px;
+  height: 4px;
+}
+
+.barbell-left-ring {
+  background-color: black;
+  height: 6px;
+  width: 4px;
+  margin-left: 110px;
+  margin-top: -5px;
+}
+
+.barbell-middle {
+  background-color: black;
+  height: 2px;
+  width: 120px;
+  margin-top: -4px;
+  margin-left: 79px;
+}
+
+.barbell-right {
+  background-color: black;
+  margin-top: -5px;
+  margin-left: 176px;
+  width: 45px;
+  height: 4px;
+}
+
+.barbell-right-ring {
+  background-color: black;
+  height: 6px;
+  width: 4px;
+  margin-left: 176px;
+  margin-top: -4px;
+}
+
+/* ---------- Nav ---------- */
+#active {
+  color: #42669f;
+  border-bottom: #42669f 2px solid;
+}
+
+.training-log {
+  margin: 0 5px;
+  background-color: #42669f;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#training-log {
+  color: white;
+}
+
+.training-log:hover {
+  background-color: white;
+}
+
+#training-log:hover {
+  color: white;
+  border: none;
+  background-color: #527ec4;
+  /* box-shadow: inset 0px 0px 0px 1px #42669f; */
+  /* border: #42669f 1px solid; */
+}
+
+.header__nav-ul {
+  display: flex;
+}
+
+.header__nav {
+  margin: 0 10px;
+}
+
+.header__nav li {
+  padding: 0 10px;
+}
+
+.header__nav a {
+  text-transform: uppercase;
+  color: black;
+  /* padding: 0 10px; */
+  /* margin: 10px; */
+}
+
+.header__nav a:hover {
+  border-bottom: #42669f 2px solid;
+}
+
+/* ---------- Intro ---------- */
+
+.intro {
+  color: white;
+  text-align: center;
+  /* background-color: #fafafc; */
+  /* background: url(/images/hero.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+  /* height: 700px; */
+  height: 100vh;
+
+  justify-content: center;
+  display: flex;
+}
+
+.intro__info a {
+  color: white;
+}
+
+.intro__info {
+  /* margin-top: 500px; */
+  z-index: -1;
+  width: 85%;
+}
+
+.intro__image img {
+  border-radius: 50%;
+}
+
+.intro__video {
+  z-index: -1;
+  position: absolute;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  /* height: 50vh; */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-height: 1550px) {
+  video {
+    height: 100vh;
+  }
+}
+
+/* ---------- If video fails, bg image will show up ---------- */
+#video {
+  color: white;
+  text-align: center;
+  background-color: #fafafc;
+  background: url(/images/hero.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* ---------- About ---------- */
+.about {
+  background-color: #f2f2f7;
+}
+
+.about__image {
+  width: 180%;
+}
+
+.about__image img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 5px 10px 0 5px #42669f;
+}
+
+.about a {
+  color: white;
+}
+
+/* ---------- Process ---------- */
+.process {
+  background-color: white;
+}
+.process .splitter {
+  /* margin-top: 70px; */
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.process__card {
+  padding: 25px;
+  flex-grow: 1;
+  width: 33%;
+}
+
+.fas {
+  font-size: 100px;
+}
+
+/* ---------- Why ---------- */
+.bg-off {
+  background: rgb(66, 102, 159);
+}
+
+.why {
+  color: white;
+  background: rgb(66, 102, 159);
+  background: url(/images/background.webp),
+    linear-gradient(0deg, rgba(66, 102, 159, 0) 0%, rgba(66, 102, 159, 0.5536415249693627) 0%);
+}
+
+.why .splitter {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.why .underline {
+  background-color: white;
+}
+
+/* ---------- Why ---------- */
+.athlete__card {
+  flex-grow: 1;
+  width: 25%;
+  color: black;
+  background-color: white;
+  margin: 25px;
+  padding: 33px;
+  border-radius: 5px;
+}
+
+.athlete__card h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.athlete__card .underline {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.athlete__card img {
+  border-radius: 50%;
+}
+
+/* ---------- Ready ---------- */
+.ready {
+  background-color: white;
+}
+
+.ready img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: 5px 10px 0 5px #42669f;
+}
+
+.ready button a {
+  color: white;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  border-top: 1px solid #2b4d81;
+  color: white;
+  background-color: #42669f;
+}
+
+.footer .splitter {
+  justify-content: space-between;
+}
+
+.footer__about {
+  width: 50%;
+}
+
+footer a {
+  color: white;
+}
+
+/* ---------- 404 ---------- */
+.not-found {
+  height: 100vh;
+  background-color: #f2f2f7;
+}
+
+.not-found .splitter {
+  flex-direction: column;
+}
+
+.not-found__info {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-heading {
+  display: flex;
+  gap: 20px;
+}

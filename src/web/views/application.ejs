@@ -1,0 +1,89 @@
+<%- include('./layouts/header.ejs'); -%>
+
+  <!-- ---------- training-vlog ---------- -->
+  <section class="application">
+    <div class="container">
+      <div class="application-content">
+        <div class="application-title">
+          <h2>Application</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="application-intro">
+          <p>Please answer all the requirement as accurate as you can. This will help us
+            identify your training history, thus helping you reach your goals faster.
+          </p>
+        </div>
+        <div class="application-form">
+          <form action="/athlete-application" method="post">
+            <!-- <br>
+						<h3>Best availability</h3>
+						<blockquote>
+							<p>My availability as follows:</p>
+							<p>Weekdays: 12PM - 2PM or 6PM - 8PM</p>
+							<p>Weekends: 9AM - 10PM</p>
+						</blockquote>
+						<br>
+						<label for="name">Your best available time and date:</label> <input
+							   type="text"> -->
+
+            <br>
+            <h3>Athlete Info</h3>
+            <label for="name">Name: </label> <input type="text" name="name" id="name">
+            <label for="age">Age: </label> <input type="text" name="age" id="age">
+            <label for="email">Email:</label> <input type="text" name="email" id="email">
+            <label for="year">Years of training: </label> <input type="text" name="year" id="year">
+            <label for="compete">Have you competed before?</label> <input type="text" name="competed-before"
+              id="competed-before">
+            <label for="social-media">Social media handle: (instagram..)</label> <input type="text" name="social-media"
+              id="social-media">
+            <br>
+            <h3>Training Info</h3>
+            <label for="name">Are you following any programs?</label> <br>
+            <label for="">Yes</label><input type="radio" name="" id="">
+            <label for="">No</label><input type="radio" name="" id="">
+            <br>
+            <br>
+            <label for="">If yes, attach your training log below:</label>
+            <br>
+            <input type="file" name="file" id="file">
+            <br>
+            <br>
+
+            <h4>Squat</h4>
+            <label for="name">Current max: </label> <input type="text" name="squat-max" id="squat-max">
+            <label for="name">Tell us about your squat: (frequency, programming, injury,
+              etc..)</label>
+            <textarea cols="30" rows="10" name="squat-text" id="squat-text"></textarea>
+            <br>
+            <h4>Bench</h4>
+            <label for="name">Current max:</label> <input type="text" name="bench-max" id="bench-max">
+            <label for="name">Tell us about your bench: (frequency, programming, injury,
+              etc..)</label>
+            <textarea cols="30" rows="10" name="bench-text" id="bench-text"></textarea>
+            <br>
+            <h4>Deadlift</h4>
+            <label for="name">Current max: </label> <input type="text" name="deadlift-max" id="deadlift-max">
+            <label for="name">Tell us about your deadlift: (frequency, programming,
+              injury,
+              <textarea cols="30" rows="10" id="deadlift-text" name="deadlift-text"></textarea>
+
+              <br>
+              <br>
+              <h3>Athlete goals</h3>
+              <label for="name">Are you competing soon?</label> <input type="text" name="competing-soon"
+                id="competing-soon">
+              <label for="name">If yes, when?</label> <input type="text" id="competing-when" name="competing-when">
+              <label for="">If no, what is your goal? (ex: get stronger, bring
+                up
+                squat, refine bench technique, etc..)</label>
+              <textarea cols="30" rows="10" name="goal" id="goal"></textarea>
+              <button type="submit">Send</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <%- include('./layouts/footer.ejs'); -%>

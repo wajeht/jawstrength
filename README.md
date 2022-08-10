@@ -68,7 +68,7 @@ You must have Nodejs installed on your computer to have this project run locally
 5.  Go go the server folder and type in the run command.
 
     ```
-    npm run dev
+    $ npm run dev
     ```
 
 6.  Now you can visit the following url on your browser.

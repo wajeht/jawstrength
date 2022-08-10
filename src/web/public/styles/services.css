@@ -1,0 +1,164 @@
+/* ---------- utilities ---------- */
+.disable-button {
+  background-color: gray;
+  width: 100%;
+  cursor: default;
+  text-decoration: line-through;
+}
+
+.disable-button:hover {
+  background-color: gray;
+}
+
+/* ---------- intro ---------- */
+.services__intro {
+  color: white;
+  text-align: center;
+  /* background-color: #fafafc; */
+  background: url(/images/services_background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+
+  justify-content: center;
+  display: flex;
+}
+
+.services__intro__info {
+  /* margin-top: 40px; */
+  width: 70%;
+}
+
+/* ---------- plan ---------- */
+.services__plan .splitter {
+  flex-wrap: wrap;
+}
+
+.services_plan__card li {
+  list-style: disc !important;
+}
+
+.services_plan__card ul {
+  padding-left: 25px;
+}
+
+.services_plan__card {
+  flex-grow: 1;
+  width: 25%;
+  color: black;
+  background-color: white;
+  margin: 25px;
+  padding: 33px;
+  border-radius: 5px;
+}
+
+.services_plan__card img {
+  border-radius: 50%;
+}
+
+.services_plan__card button {
+  width: 100%;
+}
+
+/* ---------- freebie ---------- */
+.services__freebie {
+  color: white;
+  background: rgb(66, 102, 159);
+  background: url(/images/background.webp),
+    linear-gradient(0deg, rgba(66, 102, 159, 0) 0%, rgba(66, 102, 159, 0.5536415249693627) 0%);
+}
+
+.services__freebie h2 {
+  color: white;
+}
+
+.services__freebie-title .underline {
+  background-color: white;
+}
+
+.services__freebie-intro {
+  color: white;
+  text-align: center;
+}
+
+.services__freebie .splitter {
+  flex-wrap: wrap;
+}
+
+.services_freebie__card {
+  flex-grow: 1;
+  width: 25%;
+  color: black;
+  margin: 25px;
+  padding: 33px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.services_freebie__card li {
+  list-style: disc !important;
+}
+
+.services_freebie__card ul {
+  padding-left: 25px;
+}
+
+.services__freebie img {
+  border-radius: 50%;
+}
+
+.services__freebie button {
+  width: 100%;
+}
+
+/* ---------- training-vide-log ---------- */
+.service__training-vlog {
+  background-color: white;
+}
+.service__training-vlog-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__training-vlog-image img {
+  width: 60%;
+  /* border-radius: 50%; */
+}
+
+/* .service__training-vlog-image img {
+    margin-bottom: -30px;
+} */
+
+/* ---------- app ---------- */
+.services__app-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services__app-image img {
+  width: 65%;
+}
+
+.services__app a {
+  color: black;
+  font-style: italic;
+}
+
+/* .services__app h4 {
+    margin: 10px 0 0 0;
+} */
+
+.services__app-title-download-links {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__app-title-download-links img {
+  margin-top: 25px;
+  width: auto;
+  height: 55px;
+}
