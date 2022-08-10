@@ -16,7 +16,7 @@ https://jaw-strength.jaw.dev/
 
 # 🖼️ Screenshot
 
-<img src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH.png" width="200"> ‏‎ ‎‏‎ <img src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH%20Services.png" width="200"> ‏‎ ‎‏‎ <img src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH%20Contact.png" width="200">
+<img align="left"  src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH.png" width="200"> ‏‎ ‎‏‎ <img align="left" src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH%20Services.png" width="200"> ‏‎ ‎‏‎ <img align="left" src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH%20Contact.png" width="200">
 
 # 📚 Technology
 
