@@ -17,18 +17,20 @@ https://jaw-strength.jaw.dev/
 # 🖼️ Screenshot
 
 <p float="left">
+
 <img  src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH.png" width="200">‎‏‎ ‎ <img  src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH%20Services.png" width="200"> ‏‎ ‎‏<img  src="https://raw.githubusercontent.com/wajeht/jawstrength/main/.github/screenshots/JAWSTRENGTH%20Contact.png" width="200">
+
 </p>
 
 # 📚 Technology
 
 <p float="left">
-<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />‏‎ ‎‏‎
-<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" /> ‎
-<img src="https://img.shields.io/badge/nginx-43853D?style=for-the-badge&logo=nginx&logoColor=white" />‏‎ ‎‏‎
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> ‎‏‎
-<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />‏‎ ‎‏‎
-<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />‏‎ ‎‏‎
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />‏‎ ‎‏‎
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" /> ‎
+  <img src="https://img.shields.io/badge/nginx-43853D?style=for-the-badge&logo=nginx&logoColor=white" />‏‎ ‎‏‎
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> ‎‏‎
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />‏‎ ‎‏‎
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />‏‎ ‎‏‎
 </p>
 
 # ℹ️ Prerequisites
