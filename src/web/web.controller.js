@@ -49,6 +49,13 @@ export function getThankYou(req, res, next) {
   });
 }
 
+export function getHealthCheck(req, res, next) {
+  res.json({
+    message: "ok",
+    date: new Date(),
+  });
+}
+
 export function postContact(req, res, next) {
   try {
     const subject = `${req.body.name} - ${req.body.email}`;

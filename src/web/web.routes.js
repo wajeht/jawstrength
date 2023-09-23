@@ -10,6 +10,7 @@ web.get('/about', WebController.getAbout);
 web.get('/terms', WebController.getTerms);
 web.get('/privacy', WebController.getPrivacy);
 web.get('/thank-you', WebController.getThankYou);
+web.get('/health-check', WebController.getHealthCheck);
 
 web.post('/contact', WebController.postContact);
 web.post('/application', WebController.postApplication);
