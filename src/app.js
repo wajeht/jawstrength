@@ -25,6 +25,8 @@ app.use(
           'unpkg.com',
           'kit.fontawesome.com',
         ],
+        'connect-src': ["'self'", 'ka-f.fontawesome.com'],
+        'frame-src': ["'self'", 'https://maps.google.com', 'https://www.google.com/'],
       },
     },
   }),
