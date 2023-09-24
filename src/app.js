@@ -15,8 +15,16 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        'default-src': ["'self'", 'plausible.jaw.dev '],
-        'script-src': ["'self'", "'unsafe-inline'", 'jaw-strength.jaw.dev', 'localhost', 'plausible.jaw.dev'],
+        'default-src': ["'self'", 'plausible.jaw.dev'],
+        'script-src': [
+          "'self'",
+          "'unsafe-inline'",
+          'jaw-strength.jaw.dev',
+          'localhost',
+          'plausible.jaw.dev',
+          'unpkg.com',
+          'kit.fontawesome.com',
+        ],
       },
     },
   }),
