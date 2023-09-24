@@ -13,7 +13,7 @@ web.get('/thank-you', WebController.getThankYou);
 web.get('/health-check', WebController.getHealthCheck);
 
 web.post('/contact', WebController.postContact);
-web.post('/application', WebController.postApplication);
+web.get('/application', WebController.getApplication);
 web.post('/athlete-application', WebController.postAthleteApplication);
 
 export default web;

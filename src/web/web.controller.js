@@ -51,7 +51,7 @@ export function getThankYou(req, res, next) {
 
 export function getHealthCheck(req, res, next) {
   res.json({
-    message: "ok",
+    message: 'ok',
     date: new Date(),
   });
 }
@@ -67,21 +67,18 @@ export async function postContact(req, res, next) {
   }
 }
 
-export function postApplication(req, res, next) {
-  const subject = `${req.body.name} - ${req.body.email}`;
-  const message = `<pre> ${req.body.message} </pre>`;
-  sendEmail(subject, message);
+export async function getApplication(req, res, next) {
   res.render('application.ejs', {
     pageTitle: 'JAWSTRENGTH | Application',
-    path: '/application',
+    path: `/application?plan=${req.params.plan}`,
   });
 }
 
-export function postAthleteApplication(req, res, next) {
+export async function postAthleteApplication(req, res, next) {
   try {
     const subject = `${req.body.name} - ${req.body.email}`;
-    const message = `<pre> ${JSON.stringify(req.body, null, '  ')} </pre>`;
-    sendEmail(subject, message);
+    const message = `<pre> ${JSON.stringify({ plan: req.params.plan, ...req.body }, null, '  ')} </pre>`;
+    await sendEmail(subject, message);
     return res.redirect('https://calendly.com/jawstrength/');
   } catch (err) {
     next(err);
