@@ -25,12 +25,10 @@ app.use(cors());
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(process.cwd(), 'src', 'web', 'public')), {
-  // 1 year in miliseconds
-  maxAge: 31536000000,
-});
+app.use(express.static(path.join(process.cwd(), 'src', 'web', 'public'), { maxAge: 31536000000 }));
 app.set('view engine', 'ej');
 app.set('views', path.resolve(path.join(process.cwd(), 'src', 'web', 'views')));
+
 app.use(rateLimiter);
 app.use(WebRoutes);
 
