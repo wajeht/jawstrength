@@ -10,12 +10,25 @@ import { SERVER } from './config/constants.js';
 import rateLimiter from './config/rateLimiter.js';
 import WebRoutes from './web/web.routes.js';
 
-app.use(helmet({ contentSecurityPolicy: false }));
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+        'default-src': ["'self'", 'plausible.jaw.dev '],
+        'script-src': ["'self'", "'unsafe-inline'", 'jaw-strength.jaw.dev', 'localhost', 'plausible.jaw.dev'],
+      },
+    },
+  }),
+);
 app.use(cors());
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(process.cwd(), 'src', 'web', 'public')));
+app.use(express.static(path.join(process.cwd(), 'src', 'web', 'public')), {
+  // 1 year in miliseconds
+  maxAge: 31536000000,
+});
 app.set('view engine', 'ej');
 app.set('views', path.resolve(path.join(process.cwd(), 'src', 'web', 'views')));
 app.use(rateLimiter);
