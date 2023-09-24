@@ -56,11 +56,11 @@ export function getHealthCheck(req, res, next) {
   });
 }
 
-export function postContact(req, res, next) {
+export async function postContact(req, res, next) {
   try {
     const subject = `${req.body.name} - ${req.body.email}`;
     const message = `<pre> ${req.body.message} </pre>`;
-    sendEmail(subject, message);
+    await sendEmail(subject, message);
     return res.redirect('/thank-you');
   } catch (err) {
     next(err);

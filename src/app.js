@@ -10,7 +10,7 @@ import { SERVER } from './config/constants.js';
 import rateLimiter from './config/rateLimiter.js';
 import WebRoutes from './web/web.routes.js';
 
-app.use(helmet({contentSecurityPolicy: false})); // prettier-ignore
+app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors());
 app.use(compression());
 app.use(express.json());

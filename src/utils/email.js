@@ -13,8 +13,8 @@ const smtpConfig = {
 
 const transporter = createTransport(smtpConfig);
 
-export default function sendEmail(subject, message) {
-  transporter.sendMail({
+export default async function sendEmail(subject, message) {
+  await transporter.sendMail({
     from: `"JAWSTRENGTH.COM" <contactjawstrength@gmail.com>`,
     to: 'contactjawstrength@gmail.com',
     // subject: `${req.body.name} - ${req.body.email}`,
