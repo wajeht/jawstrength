@@ -15,3 +15,5 @@ export const EMAIL = {
   AUTH_USER: process.env.EMAIL_AUTH_USER,
   AUTH_PASS: process.env.EMAIL_AUTH_PASS,
 };
+
+export const SENTRY_URL = process.env.SENTRY_URL;
