@@ -2,11 +2,15 @@ import path from 'path';
 import cors from 'cors';
 import helmet from 'helmet';
 import compression from 'compression';
+import Sentry from '@sentry/node'
+import { SERVER, SENTRY_URL } from './config/constants.js';
+
+Sentry.init({ dsn: SENTRY_URL });
 
 import express from 'express';
 const app = express();
 
-import { SERVER } from './config/constants.js';
+app.use(Sentry.Handlers.requestHandler());
 import rateLimiter from './config/rateLimiter.js';
 import WebRoutes from './web/web.routes.js';
 
@@ -42,6 +46,12 @@ app.set('views', path.resolve(path.join(process.cwd(), 'src', 'web', 'views')));
 app.use(rateLimiter);
 app.use(WebRoutes);
 
+// app.get("/debug-sentry", function mainHandler(req, res) {
+//   throw new Error("My first GlitchTip error!");
+// });
+
+
+app.use(Sentry.Handlers.errorHandler());
 app.use((req, res, next) => res.status(404).render('404.ejs', { path: '/not-found', pageTitle: 'JawStrength: 404' })); // 404
 app.use((err, req, res, next) => res.status(500).render('500.ejs', { path: '/err', pageTitle: 'JawStrength: 500' })); // 500
 app.listen(SERVER.PORT, () => console.log(`App is running at http://localhost:${SERVER.PORT}`));
