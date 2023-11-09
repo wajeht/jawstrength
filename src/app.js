@@ -2,7 +2,7 @@ import path from 'path';
 import cors from 'cors';
 import helmet from 'helmet';
 import compression from 'compression';
-import Sentry from '@sentry/node'
+import Sentry from '@sentry/node';
 import { SERVER, SENTRY_URL } from './config/constants.js';
 
 Sentry.init({ dsn: SENTRY_URL });
@@ -19,7 +19,17 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        'default-src': ["'self'", 'plausible.jaw.dev'],
+        'default-src': [
+          "'self'",
+          'plausible.jaw.dev',
+          "'self'",
+          "'unsafe-inline'",
+          'jaw-strength.jaw.dev',
+          'localhost',
+          'plausible.jaw.dev',
+          'unpkg.com',
+          'kit.fontawesome.com',
+        ],
         'script-src': [
           "'self'",
           "'unsafe-inline'",
@@ -29,7 +39,17 @@ app.use(
           'unpkg.com',
           'kit.fontawesome.com',
         ],
-        'connect-src': ["'self'", 'ka-f.fontawesome.com'],
+        'connect-src': [
+          "'self'",
+          'ka-f.fontawesome.com',
+          "'self'",
+          "'unsafe-inline'",
+          'jaw-strength.jaw.dev',
+          'localhost',
+          'plausible.jaw.dev',
+          'unpkg.com',
+          'kit.fontawesome.com',
+        ],
         'frame-src': ["'self'", 'https://maps.google.com', 'https://www.google.com/'],
       },
     },
@@ -49,7 +69,6 @@ app.use(WebRoutes);
 // app.get("/debug-sentry", function mainHandler(req, res) {
 //   throw new Error("My first GlitchTip error!");
 // });
-
 
 app.use(Sentry.Handlers.errorHandler());
 app.use((req, res, next) => res.status(404).render('404.ejs', { path: '/not-found', pageTitle: 'JawStrength: 404' })); // 404
